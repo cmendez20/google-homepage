@@ -1,4 +1,4 @@
-/* CSS Reset */
+/* CSS RESET */
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ body {
 /* NAVIGATION */
 .navbar {
   width: 100%;
-  padding: 2.1rem 1.5rem;
+  padding: 2.2rem 1.8rem;
   margin: 0 auto;
   height: 10rem;
   display: flex;
@@ -37,4 +37,64 @@ body {
   text-decoration: none;
   color: #333;
   padding: 0 .75rem;
+}
+
+/* MAIN CONTENT | GOOGLE LOGO | SEARCH BOX | BUTTONS */
+.container {
+  /* width: 85%;
+  margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 42rem;
+}
+
+.google-logo {
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
+.search-icon {
+  width: 20rem;
+  height: 20rem;
+  fill: #9aa0a6;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.search-box {
+  position: relative;
+  width: 36%;
+  height: 4.5rem;
+  margin-bottom: 3rem;
+  border: none;
+  border: solid 2px #eee;
+  border-radius: 100px;
+}
+
+.search-box:hover {
+  box-shadow: 0px 1px 4px 2px #eee;
+}
+
+button {
+  /* display: inline; */
+  /* margin: 0 auto; */
+  margin: 0 1rem;
+  font-size: 1.4rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  color: #7a7a7a;
+  /* #9aa0a6 */
+  background-color: #F2F2F2;
+  border-radius: 3px;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 0 1.5px rgb(216, 216, 216);
+  color: #3d3d3d;
+  background-color: #f7f7f7;
+  /* border: solid 2px rgb(216, 216, 216); */
 }
