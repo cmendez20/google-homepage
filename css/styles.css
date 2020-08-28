@@ -39,6 +39,10 @@ body {
   padding: 0 .75rem;
 }
 
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
 /* MAIN CONTENT | GOOGLE LOGO | SEARCH BOX | BUTTONS */
 .container {
   /* width: 85%;
@@ -52,7 +56,7 @@ body {
 
 .google-logo {
   display: block;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.7rem;
 }
 
 .search-icon {
@@ -67,7 +71,7 @@ body {
 .search-box {
   position: relative;
   width: 36%;
-  height: 4.5rem;
+  height: 4.55rem;
   margin-bottom: 3rem;
   border: none;
   border: solid 2px #eee;
@@ -79,14 +83,11 @@ body {
 }
 
 button {
-  /* display: inline; */
-  /* margin: 0 auto; */
   margin: 0 1rem;
   font-size: 1.4rem;
   padding: 1rem 1.5rem;
   border: none;
-  color: #7a7a7a;
-  /* #9aa0a6 */
+  color: #5F6368;;
   background-color: #F2F2F2;
   border-radius: 3px;
 }
@@ -94,7 +95,43 @@ button {
 button:hover {
   cursor: pointer;
   box-shadow: 0px 0px 0 1.5px rgb(216, 216, 216);
-  color: #3d3d3d;
+  /* color: #3d3d3d; */
+  color: #5F6368;;
   background-color: #f7f7f7;
   /* border: solid 2px rgb(216, 216, 216); */
+}
+
+/* FOOTER */
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #F2F2F2;
+  width: 100%;
+}
+
+.footer {
+  height: 4.2rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer div {
+  display: flex;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.footer .footer-link {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #5F6368;
+  padding: 0 1.2rem;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }
