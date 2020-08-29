@@ -11,7 +11,8 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
 }
 
 /* NAVIGATION */
@@ -43,29 +44,33 @@ body {
   text-decoration: underline;
 }
 
+.navbar .sign-in-btn {
+  background: #4583EB;
+  padding: .9rem 1.2rem;
+  color: #F2f2f2;
+  font-weight: bolder;
+}
+
 /* MAIN CONTENT | GOOGLE LOGO | SEARCH BOX | BUTTONS */
 .container {
-  /* width: 85%;
-  margin: 0 auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 42rem;
+  height: 45%;
 }
 
 .google-logo {
   display: block;
+  margin-top: 10rem;
   margin-bottom: 2.7rem;
 }
 
 .search-container {
-  /* display: block; */
-  /* justify-content: center; */
-  width: 36%;
-  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+  /* margin: 0 auto; */
   margin-bottom: 3rem;
-  /* position: relative; */
 }
 
 .search-container i {
@@ -81,11 +86,13 @@ body {
 }
 
 .search-field {
+  /* width: 47%; */
+  max-width: 60rem;
   width: 100%;
-  padding: 1.2rem;
-  /* text-align: center; */
-  font-size: 1.5rem;
-  font-weight: 500;
+  /* display: inline-block; */
+  /* margin: 0 auto; */
+  padding: 1.3rem;
+  font-size: 1.6rem;
   border: none;
   border: solid 2px #eee;
   border-radius: 100px; 
@@ -117,7 +124,7 @@ button:hover {
 
 /* FOOTER */
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background-color: #F2F2F2;
   width: 100%;
@@ -125,7 +132,7 @@ footer {
 
 .footer {
   height: 4.2rem;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -148,4 +155,17 @@ footer {
 
 .footer-link:hover {
   text-decoration: underline;
+}
+
+/* MEDIA QUERIES ~RESPONSIVE DESIGN~ */
+
+@media screen and (max-width: 600px) {
+  .navbar .nav-link {
+    font-size: 90%;
+  }
+  
+  .footer .footer-link {
+    font-size: 90%;
+    padding: 0 .9rem;
+  }
 }
