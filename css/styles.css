@@ -164,8 +164,20 @@ footer {
     font-size: 90%;
   }
   
+  .footer {
+    height: 7rem;
+    padding: 4rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+  }
+
+  .footer div:first-of-type {
+    margin-bottom: 1rem;
+  }
+
   .footer .footer-link {
-    font-size: 90%;
-    padding: 0 .9rem;
+    font-size: 1.2rem;
   }
 }
